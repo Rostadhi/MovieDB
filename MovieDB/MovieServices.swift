@@ -10,8 +10,8 @@ import Alamofire
 
 
 class MovieServices: Codable {
-    static let host:String = "https://api.themoviedb.org/3/movie/550?api_key=9fb5bd987d2553d4b9b40d48a391d2d6"
-    static let imageHost:String = "https://image.tmdb.org/t/p/w300//"
+    static let host:String = "https://api.themoviedb.org/3/"
+    static let imageHost:String = "https://image.tmdb.org/t/p/w500//"
     static let headers: HTTPHeaders = [
         .accept("application/json"),
         .authorization(bearerToken: "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZmI1YmQ5ODdkMjU1M2Q0YjliNDBkNDhhMzkxZDJkNiIsInN1YiI6IjYxZGVkYmVkMjgxMWExMDAxOWI0NzNiYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jxfPX3uq6gKTt68LUzF5Ksxiyz6L6adMXjL2r_RTlCk")

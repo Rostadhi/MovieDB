@@ -11,12 +11,14 @@ import SwiftUIX
 
 
 struct DetailView: View {
+    let filmVideo: MovieYoutube
     @Environment(\.presentationMode) var presentationMode
     @State var movie:MovieServices?
     @State var reviews:[Review]?
     @State var pages = 0
     @State var detailOverview:String
     @State var detailPoster:String
+    @State private var selectedTrailer: MovieVideo?
     var movieID:String?
     var movieTitle:String?
     
@@ -81,7 +83,33 @@ struct DetailView: View {
                     }
                     Spacer()
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                if filmVideo.youtubeTrailers != nil && filmVideo.youtubeTrailers!.count > 0 {
+                    VStack(alignment: .leading) {
+                        Text("Trailers")
+                            .font(.largeTitle)
+                            .fontWeight(.semibold)
+                            
+                            .padding([.top, .leading, .trailing])
+                        
+                        ForEach(filmVideo.youtubeTrailers!, id: \.self.id) { trailer in
+                            Button(action: {
+                                self.selectedTrailer = trailer
+                            }) {
+                                HStack {
+                                    Text(trailer.name)
+                                    Spacer()
+                                    Image(systemName: "play.circle.fill")
+                                        .foregroundColor(Color(UIColor.systemBlue))
+                                }
+                                .padding([.leading, .trailing])
+                            }
+                            .padding([.top, .bottom], 4)
+                        }
+                    }
+                }
+            }
+            .sheet(item: self.$selectedTrailer) { trailer in
+                SafariView(url: trailer.youtubeURL!)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .edgesIgnoringSafeArea(.all)
@@ -117,6 +145,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView( detailOverview: "", detailPoster: "", movieID: "", movieTitle: "")
+        DetailView( filmVideo: MovieYoutube.stubbedMovies[6], detailOverview: "", detailPoster: "", movieID: "", movieTitle: "")
     }
 }

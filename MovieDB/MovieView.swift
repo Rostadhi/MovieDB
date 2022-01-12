@@ -32,7 +32,7 @@ struct MoviesView: View {
                             
                             ForEach(0..<pages, id: \.hashValue) { index in
                                 let movie = movies![index] as! GenreMovie
-                                let detailVC:DetailView = DetailView(detailOverview: movie.overview!, detailPoster: movie.posterPath!, movieID: String(movie.id!), movieTitle:movie.title)
+                                let detailVC:DetailView = DetailView(filmVideo: MovieYoutube.stubbedMovie, detailOverview: movie.overview!, detailPoster: movie.posterPath!, movieID: String(movie.id!), movieTitle:movie.title)
                                 
                                 NavigationLink(destination: detailVC){
                                     LazyHStack{
