@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20D9E32278F0FAC008552FB /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D9E31278F0FAC008552FB /* MovieView.swift */; };
+		C20D9E34278F0FD9008552FB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D9E33278F0FD9008552FB /* DetailView.swift */; };
+		C20D9E36278F1009008552FB /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D9E35278F1009008552FB /* AsyncImage.swift */; };
+		C20D9E38278F1027008552FB /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D9E37278F1027008552FB /* ApiCall.swift */; };
+		C20D9E3A278F1054008552FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D9E39278F1054008552FB /* Constants.swift */; };
+		C20D9E3C278F106A008552FB /* GenreServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D9E3B278F106A008552FB /* GenreServices.swift */; };
+		C20D9E3E278F10B8008552FB /* MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D9E3D278F10B8008552FB /* MovieServices.swift */; };
+		C20D9E40278F10FD008552FB /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D9E3F278F10FD008552FB /* ReviewService.swift */; };
 		C2FFBCEE278E7A7A009A05FC /* MovieDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFBCED278E7A7A009A05FC /* MovieDBApp.swift */; };
 		C2FFBCF0278E7A7A009A05FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFBCEF278E7A7A009A05FC /* ContentView.swift */; };
 		C2FFBCF2278E7A7C009A05FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FFBCF1278E7A7C009A05FC /* Assets.xcassets */; };
@@ -14,6 +22,9 @@
 		C2FFBCFF278E7A7C009A05FC /* MovieDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFBCFE278E7A7C009A05FC /* MovieDBTests.swift */; };
 		C2FFBD09278E7A7C009A05FC /* MovieDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFBD08278E7A7C009A05FC /* MovieDBUITests.swift */; };
 		C2FFBD0B278E7A7D009A05FC /* MovieDBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFBD0A278E7A7D009A05FC /* MovieDBUITestsLaunchTests.swift */; };
+		C2FFBD19278EB40C009A05FC /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = C2FFBD18278EB40C009A05FC /* SwiftUIX */; };
+		C2FFBD1C278EB651009A05FC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C2FFBD1B278EB651009A05FC /* SwiftyJSON */; };
+		C2FFBD1F278EB689009A05FC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C2FFBD1E278EB689009A05FC /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C20D9E31278F0FAC008552FB /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		C20D9E33278F0FD9008552FB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C20D9E35278F1009008552FB /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		C20D9E37278F1027008552FB /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		C20D9E39278F1054008552FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C20D9E3B278F106A008552FB /* GenreServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreServices.swift; sourceTree = "<group>"; };
+		C20D9E3D278F10B8008552FB /* MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServices.swift; sourceTree = "<group>"; };
+		C20D9E3F278F10FD008552FB /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
 		C2FFBCEA278E7A7A009A05FC /* MovieDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FFBCED278E7A7A009A05FC /* MovieDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBApp.swift; sourceTree = "<group>"; };
 		C2FFBCEF278E7A7A009A05FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2FFBD1F278EB689009A05FC /* Alamofire in Frameworks */,
+				C2FFBD1C278EB651009A05FC /* SwiftyJSON in Frameworks */,
+				C2FFBD19278EB40C009A05FC /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +120,14 @@
 				C2FFBCEF278E7A7A009A05FC /* ContentView.swift */,
 				C2FFBCF1278E7A7C009A05FC /* Assets.xcassets */,
 				C2FFBCF3278E7A7C009A05FC /* Preview Content */,
+				C20D9E31278F0FAC008552FB /* MovieView.swift */,
+				C20D9E33278F0FD9008552FB /* DetailView.swift */,
+				C20D9E35278F1009008552FB /* AsyncImage.swift */,
+				C20D9E37278F1027008552FB /* ApiCall.swift */,
+				C20D9E39278F1054008552FB /* Constants.swift */,
+				C20D9E3B278F106A008552FB /* GenreServices.swift */,
+				C20D9E3D278F10B8008552FB /* MovieServices.swift */,
+				C20D9E3F278F10FD008552FB /* ReviewService.swift */,
 			);
 			path = MovieDB;
 			sourceTree = "<group>";
@@ -143,6 +173,11 @@
 			dependencies = (
 			);
 			name = MovieDB;
+			packageProductDependencies = (
+				C2FFBD18278EB40C009A05FC /* SwiftUIX */,
+				C2FFBD1B278EB651009A05FC /* SwiftyJSON */,
+				C2FFBD1E278EB689009A05FC /* Alamofire */,
+			);
 			productName = MovieDB;
 			productReference = C2FFBCEA278E7A7A009A05FC /* MovieDB.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +250,11 @@
 				Base,
 			);
 			mainGroup = C2FFBCE1278E7A7A009A05FC;
+			packageReferences = (
+				C2FFBD17278EB40C009A05FC /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+				C2FFBD1A278EB651009A05FC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				C2FFBD1D278EB689009A05FC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C2FFBCEB278E7A7A009A05FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +297,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20D9E36278F1009008552FB /* AsyncImage.swift in Sources */,
 				C2FFBCF0278E7A7A009A05FC /* ContentView.swift in Sources */,
+				C20D9E34278F0FD9008552FB /* DetailView.swift in Sources */,
+				C20D9E3C278F106A008552FB /* GenreServices.swift in Sources */,
+				C20D9E32278F0FAC008552FB /* MovieView.swift in Sources */,
+				C20D9E3A278F1054008552FB /* Constants.swift in Sources */,
+				C20D9E38278F1027008552FB /* ApiCall.swift in Sources */,
+				C20D9E40278F10FD008552FB /* ReviewService.swift in Sources */,
+				C20D9E3E278F10B8008552FB /* MovieServices.swift in Sources */,
 				C2FFBCEE278E7A7A009A05FC /* MovieDBApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +633,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2FFBD17278EB40C009A05FC /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+		C2FFBD1A278EB651009A05FC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C2FFBD1D278EB689009A05FC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2FFBD18278EB40C009A05FC /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2FFBD17278EB40C009A05FC /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+		C2FFBD1B278EB651009A05FC /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2FFBD1A278EB651009A05FC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		C2FFBD1E278EB689009A05FC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2FFBD1D278EB689009A05FC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C2FFBCE2278E7A7A009A05FC /* Project object */;
 }
